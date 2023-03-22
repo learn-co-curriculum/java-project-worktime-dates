@@ -16,19 +16,22 @@ our project. Every `Concert` should have a date associated with it. When we add
 this new instance variable, we'll have to make a few changes to our existing
 concert application.
 
-1. Modify the `Concert` class.
-    1. Add an instance variable called `concertDate` of the appropriate date-time
-       object.
-        1. Use a date-time object from the `Date and Time API`.
-        2. Hint: Look at the unit tests for a hint.
-    2. Update the constructor to take in the `concertDate` as a parameter.
-    3. Use IntelliJ to generate a getter method for `concertDate`.
-    4. Update the `toString()` method to include the `concertDate`.
-2. Modify the `ConcertService` class appropriately given the changes made to
-   the `Concert` class.
-3. Consider the following changes to the `Driver`:
+Modify the `Concert` class.
 
-   ```java
+ - Add an instance variable called `concertDate` of the appropriate date-time
+   object. 
+   - Use a date-time object from the `Date and Time API`. 
+   - Hint: Look at the unit tests for a hint.
+ - Update the constructor to take in the `concertDate` as a parameter. 
+ - Use IntelliJ to generate a getter method for `concertDate`. 
+ - Update the `toString()` method to include the `concertDate`.
+
+Modify the `ConcertService` class appropriately given the changes made to the
+`Concert` class.
+
+Consider the following changes to the `Driver`:
+
+```java
    import java.time.LocalDate;
    import java.time.format.DateTimeFormatter;
    import java.time.format.DateTimeParseException;
@@ -105,14 +108,15 @@ concert application.
            }
        }
    }
-   ```
+```
 
-    1. Take note of how we are prompting the user for a concert date and how we are
-       validating the date is valid.
-    2. If we run the driver class now and add a concert, an expected output could be
-       this:
+Take note of how we are prompting the user for a concert date and how we are
+validating the date is valid.
 
-   ```text
+If we run the driver class now and add a concert, an expected output could be
+this:
+
+```text
    Select an action: a=add concert, d=display all concerts, p=purchase ticket, w=add to waitlist, q=quit: 
    a
    Enter the performer's name:
@@ -133,9 +137,9 @@ concert application.
    Concert date was not a valid date
    Select an action: a=add concert, d=display all concerts, p=purchase ticket, w=add to waitlist, q=quit: 
    q
-   ```
+```
 
-4. Modify the following unit tests below and ensure the tests all pass.
+Modify the following unit tests below and ensure the tests all pass.
 
 Update the `ConcertTest`:
 
