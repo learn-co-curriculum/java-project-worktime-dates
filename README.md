@@ -18,13 +18,13 @@ concert application.
 
 Modify the `Concert` class.
 
- - Add an instance variable called `concertDate` of the appropriate date-time
-   object. 
-   - Use a date-time object from the `Date and Time API`. 
-   - Hint: Look at the unit tests for a hint.
- - Update the constructor to take in the `concertDate` as a parameter. 
- - Use IntelliJ to generate a getter method for `concertDate`. 
- - Update the `toString()` method to include the `concertDate`.
+- Add an instance variable called `concertDate` of the appropriate date-time
+   object.
+  - Use a date-time object from the `Date and Time API`.
+  - Hint: Look at the unit tests for a hint.
+- Update the constructor to take in the `concertDate` as a parameter.
+- Use IntelliJ to generate a getter method for `concertDate`.
+- Update the `toString()` method to include the `concertDate`.
 
 Modify the `ConcertService` class appropriately given the changes made to the
 `Concert` class.
